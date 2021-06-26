@@ -1,0 +1,20 @@
+{
+  "name": "01-setting-up-tailwindcss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "",
+    "dev": "npx tailwindcss build -i custom_css/style.css -o css/tailwind.css --watch --jit --purge './**/*.html' & vite"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.2",
+    "vite": "^2.3.8"
+  },
+  "dependencies": {
+    "watch": "^1.0.2"
+  }
+}

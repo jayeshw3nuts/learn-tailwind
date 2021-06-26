@@ -1,0 +1,35 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3978217, 2020-11-22T17:45:10-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Branding-Medium by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/branding/medium/
+ * 
+ * Webfont: Branding-Semibold by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/branding/semibold/
+ * 
+ * 
+ * Webfonts copyright: Copyright &amp;#x00A9; 2016 by LatinoType. All rights reserved.
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("//hello.myfonts.net/count/3cb3e9");*/
+  
+@font-face {
+  font-family: 'Branding-Semibold';
+  src: url('webFonts/Branding-Semibold/font.woff2') format('woff2'), url('webFonts/Branding-Semibold/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Branding-Medium';
+  src: url('webFonts/Branding-Medium/font.woff2') format('woff2'), url('webFonts/Branding-Medium/font.woff') format('woff');
+}
+
