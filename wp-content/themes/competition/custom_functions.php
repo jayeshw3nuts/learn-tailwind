@@ -90,3 +90,39 @@ add_filter('use_block_editor_for_post', '__return_false', 10);
 // disable for post types
 add_filter('use_block_editor_for_post_type', '__return_false', 10);
 
+/* optredens Post Type Start */
+function w3n_optreden_collections(){
+    $labels = array(
+        'name' => __( 'Optreden', 'santanare' ),
+        'singular_name' => __( 'Optredens', 'santanare' ),
+        'add_new' => __( 'Add New', 'santanare' ),
+        'add_new_item' => __( 'Add New Optreden', 'santanare' ),
+        'edit_item' => __( 'Edit Optreden', 'santanare' ),
+        'new_item' => __( 'New Optreden', 'santanare' ),
+        'view_item' => __( 'View Optreden', 'santanare' ),
+        'search_items' => __( 'Search Optreden', 'santanare' ),
+        'not_found' => __( 'No Optreden Found', 'santanare' ),
+        'not_found_in_trash' => __( 'No Optreden Found In Trash', 'santanare' ),
+        'parent_item_colon' => '',
+        'menu_name' => __( 'Optredens', 'santanare' )
+    );
+    $args = array(
+        'labels'             => $labels,
+        'menu_icon'          => 'dashicons-admin-post',
+        'public'             => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'capability_type'     => 'post',
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'hierarchical'       => true,
+        'menu_position'      => null,
+        'rewrite' => array( 'slug' => 'optreden', 'with_front' => false ),
+        'has_archive' => false,
+        'supports' => array( 'title', 'editor','thumbnail', 'page-attributes','excerpt')
+    );
+    register_post_type('cpt_optreden', $args);
+  
+}
+add_action('init', 'w3n_optreden_collections', 0);
